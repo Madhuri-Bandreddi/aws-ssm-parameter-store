@@ -6,7 +6,8 @@
 #   key_id = " 4be654e1-07dd-476e-9e60-d93ae9f7402b"
 # }
 
-resource "aws_ssm_parameter" "foo" {
-  name   = "foo"
-  value  = "hello world"
-  type   = "String"
+resource "aws_ssm_parameter" "parameter" {
+  name  = "test.test1"
+  type  = "String"
+  value = "hello world"
+}
