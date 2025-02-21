@@ -12,5 +12,19 @@ parameters = [
   { name = "dev.user.mongo_url", value = "mongodb://mongodb.madhari123.shop:27017/users" },
   { name = "dev.cart.redis_host", value = "redis.madhari123.shop" },
   { name = "dev.cart.catalogue_host", value = "catalogue.madhari123.shop" },
-  { name = "dev.cart.catalogue_port", value = "8080" }
+  { name = "dev.cart.catalogue_port", value = "8080" },
+  { name = "dev.shipping.cart_endpoint", value = "cart.madhari123.shop:8080" },
+  { name = "dev.shipping.db_host", value = "mysql.madhari123.shop" },
+  { name = "dev.shipping.db_user", value = "root" },
+  { name = "dev.payment.cart_host", value = "cart.madhari123.shop" },
+  { name = "dev.payment.cart_port", value = "8080" },
+  { name = "dev.payment.user_host", value = "user.madhari123.shop" },
+  { name = "dev.payment.user_port", value = "8080" },
+  { name = "dev. payment. amqp_host", value = "rabbitmq.madhari123.shop" },
+  { name = "dev. payment. amqp_user", value = "roboshop" }
+]
+
+passwords =[
+  { name = "dev.payment.amqp_pass", value = "roboshop123" },
+  { name = "dev.shipping.db_pass", value = "RoboShop@1" }
 ]
