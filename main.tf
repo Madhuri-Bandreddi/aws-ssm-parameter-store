@@ -4,7 +4,7 @@ resource "aws_ssm_parameter" "parameters" {
   value  = var.parameters[count.index].value
   type   = "String"
   key_id = "4be654e1-07dd-476e-9e60-d93ae9f7402b"
-  overwrite = true
+  #overwrite = true
 }
 
 ## Passwords are not at all meant to keep inside the code at all, Here since it is a lab we are doing it to save the time.
@@ -16,5 +16,5 @@ resource "aws_ssm_parameter" "passwords" {
   value  = var.passwords[count.index].value
   type   = "SecureString"
   key_id = "4be654e1-07dd-476e-9e60-d93ae9f7402b"
-  overwrite   = true
+  #overwrite   = true
 }
